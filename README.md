@@ -42,6 +42,7 @@ Connect the components to your Arduino as follows. Note that the CLK pin of the 
 |                     | SW            | D4          |
 | **Signal Input** | (Probe Tip)   | A0          |
 |                     | (Probe Ground)| GND         |
+## Circuit Diagram
 ![Circuit Diagram](https://github.com/richardkuro/arduino-oscilloscope/blob/main/assets/circuit_image.png)
 ## Software Dependencies
 
