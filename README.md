@@ -6,8 +6,7 @@ A simple, yet powerful, DIY digital oscilloscope built using an Arduino-compatib
 
 It leverages a memory-efficient display library (`U8g2`), hardware interrupts for a responsive user interface, and ADC prescaler optimization for faster waveform sampling.
 
-![Demo Image Placeholder](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWY5aGMyNnE4eWIwZW43bHN6bDFodXEzZXRieWo0dW91Nmt4Y2hoeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zTAVYJy7ZKJyL3gAjC/giphy.gif)
-*(Oscilloscope Timebase Adjust at work)*
+![Alt Text](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWY5aGMyNnE4eWIwZW43bHN6bDFodXEzZXRieWo0dW91Nmt4Y2hoeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zTAVYJy7ZKJyL3gAjC/giphy.gif)
 
 ## Features
 
