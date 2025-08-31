@@ -6,7 +6,7 @@ A simple, yet powerful, DIY digital oscilloscope built using an Arduino-compatib
 
 It leverages a memory-efficient display library (`U8g2`), hardware interrupts for a responsive user interface, and ADC prescaler optimization for faster waveform sampling.
 
-![hippo]([https://media3.giphy.com/media/aUovxH8Vf9qDu/giphy.gif](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWY5aGMyNnE4eWIwZW43bHN6bDFodXEzZXRieWo0dW91Nmt4Y2hoeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zTAVYJy7ZKJyL3gAjC/giphy.gif))
+![Timebase Scaling](https://github.com/richardkuro/arduino-oscilloscope/blob/main/assets/a4o6s5.gif) 
 ## Features
 
 -   **Real-time Waveform Display:** Visualizes analog signals on a 128x64 OLED screen.
@@ -42,7 +42,7 @@ Connect the components to your Arduino as follows. Note that the CLK pin of the 
 |                     | SW            | D4          |
 | **Signal Input** | (Probe Tip)   | A0          |
 |                     | (Probe Ground)| GND         |
-
+![Circuit Diagram](https://github.com/richardkuro/arduino-oscilloscope/blob/main/assets/circuit_image.png)
 ## Software Dependencies
 
 This project requires the **U8g2lib** library. You can install it directly from the Arduino IDE:
@@ -93,6 +93,22 @@ The `<Wire.h>` library is included with the Arduino IDE by default.
 -   **Input Protection:** Add a simple protection circuit (e.g., a Zener diode and resistor) to protect the Arduino's analog pin from overvoltage.
 -   **AC/DC Coupling:** Add a switch and a capacitor to allow for AC coupling.
 
+## Tips for easier access
+-  **Reset Error:** I used a cheaper version of CH340G which didn't have DTR Pin. It was a hassle to figure out why the program wasn't uploading so i'll add this tip.
+*Incase You use a programmer like this for Arduino Mini/Pro Mini*
+![CH340G Photo](https://github.com/richardkuro/arduino-oscilloscope/blob/main/assets/USB-to-TTL-Converter_1200x1200.webp)
+
+-  You have to refer to the IC pinout of the CH340G.
+-  Locate the DTR Pin and 
+-  wire up a 0.1uF Capacitor to the RST of the arduino
+-  (0.1uf in ceramic capacitor is 104)
+
+![CH#40G Pinout](https://github.com/richardkuro/arduino-oscilloscope/blob/main/assets/OrWNG.png)
+
+-  *It will look like THIS*
+![Final Circuit](https://github.com/richardkuro/arduino-oscilloscope/blob/main/assets/pinout.jpg)
+
+## ENJOY THE PROCESS, NOT JUST THE RESULTS.
 ## License
 
 This project is open-source. Feel free to use, modify, and distribute the code. A credit or link back to this repository is appreciated but not required.
